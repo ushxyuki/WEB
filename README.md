@@ -1,18 +1,28 @@
-# University Lost and Found App
+A full-stack web project developed by **ushxyuki**, built with HTML, CSS, JavaScript, and Node.js.
 
-This Android application is a prototype for a university lost and found system. 
-The app is designed to help students report lost items, report found items, browse reports, and view item details.
+## Overview
 
-## Prototype Scope
+This project demonstrates a structured web application with a responsive user interface, client-side interactivity, and a simple Node.js server setup.
 
-This version focuses on the mobile user interface, navigation flow, report forms, image upload interaction, and item browsing experience.
+## Key Features
 
-The app currently uses demo data because it is not connected to a real university staff system. In a real deployment, reports would be stored in a database and reviewed by authorised Lost and Found staff.
+* Responsive homepage design
+* Team page section
+* Custom CSS styling
+* JavaScript-based interactions
+* Node.js server configuration
+* Organised project structure
 
-## Planned Improvements
+## Tech Stack
 
-- Firebase Authentication for student login
-- Firestore database for storing reports
-- Admin dashboard for staff review
-- Email notifications for item updates
-- Search and category filtering improvements
+* HTML5
+* CSS3
+* JavaScript
+* Node.js
+* npm
+
+
+
+## Author
+
+Developed by **ushxyuki**.
