@@ -6,6 +6,7 @@
   <title>ASTERRISK RP | FiveM Roleplay</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <a href="#home" class="logo">
@@ -24,7 +25,7 @@
       <a href="#discord">Join Discord</a>
       <a href="#applications">Whitelist</a>
       <a href="#departments">Departments</a>
-      <a href="#staff">Staff</a>
+      <a href="team.html">Staff</a>
       <a href="#rules">Rules</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
@@ -45,40 +46,45 @@
         </p>
 
         <div class="hero-buttons">
-          <a class="btn btn-primary" href="https://discord.gg/kHRrNccAxA" target="_blank">💬 Join Discord</a>
-          <a class="btn btn-secondary" href="#applications">📋 Apply for Whitelist</a>
+          <a class="btn btn-primary" href="https://discord.gg/kHRrNccAxA" target="_blank">
+            💬 Join Discord
+          </a>
+          <a class="btn btn-secondary" href="#applications">
+            📋 Apply for Whitelist
+          </a>
         </div>
       </div>
 
-     <aside class="status-card">
-  <p class="card-title">Server Status</p>
-  <h2><span class="dot"></span> Online</h2>
-  <p class="muted">Discord community live stats</p>
+      <aside class="status-card">
+        <p class="card-title">Server Status</p>
+        <h2><span class="dot"></span> Online</h2>
+        <p class="muted">Discord community live stats</p>
 
-  <div class="stat-list">
-    <div>
-      <span>🟢</span>
-      <p>Online Members <strong id="discordOnline">Loading...</strong></p>
-    </div>
+        <div class="stat-list">
+          <div>
+            <span>🟢</span>
+            <p>Online Members <strong id="discordOnline">Loading...</strong></p>
+          </div>
 
-    <div>
-      <span>💬</span>
-      <p>Discord Members <strong id="discordMembers">Loading...</strong></p>
-    </div>
+          <div>
+            <span>💬</span>
+            <p>Discord Members <strong id="discordMembers">Loading...</strong></p>
+          </div>
 
-   <div>
-  <span>⏱️</span>
-  <p>Server Uptime <strong>24/7</strong></p>
-</div>
-    <div>
-      <span>🛡️</span>
-      <p>Active Staff <strong>10</strong></p>
-    </div>
-  </div>
-</aside>
+          <div>
+            <span>⏱️</span>
+            <p>Server Uptime <strong>24/7</strong></p>
+          </div>
+
+          <div>
+            <span>🛡️</span>
+            <p>Active Staff <strong>10</strong></p>
+          </div>
+        </div>
+      </aside>
     </section>
 
-    <!-- Asterisk Rules -->
+    <!-- ASTERRISK RULES -->
     <section class="section" id="about">
       <div class="section-title">
         <span></span>
@@ -87,19 +93,29 @@
       </div>
 
       <div class="feature-grid">
-        <article class="feature-card">
+        <article class="feature-card clickable-rule-card" onclick="openRuleLanguagePopup('rp')">
           <div class="icon">🛡️</div>
-          <h3>RP Rules</h3>
-          <p>Rules of the road for a safe and enjoyable roleplay experience</p>
+          <div>
+            <h3>RP Rules</h3>
+            <p>Rules of the road for a safe and enjoyable roleplay experience.</p>
+          </div>
         </article>
 
-        <article class="feature-card">
+        <article class="feature-card clickable-rule-card" onclick="openRuleLanguagePopup('robbery')">
           <div class="icon">👥</div>
-          <h3>Robbery Rules</h3>
-          <p>Guidelines for conducting realistic and fair robberies within the game world.</p>
+          <div>
+            <h3>Robbery Rules</h3>
+            <p>Guidelines for conducting realistic and fair robberies within the game world.</p>
+          </div>
         </article>
 
-        
+           <article class="feature-card clickable-rule-card" onclick="openRuleLanguagePopup('criminal')">
+          <div class="icon">👥</div>
+          <div>
+            <h3>Criminal Rules</h3>
+            <p>Guidelines for conducting realistic and fair criminal activities within the game world.</p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -112,37 +128,68 @@
       </div>
 
       <div class="app-grid">
-        <article class="app-card">
-          <div class="big-icon">📋</div>
-          <div>
-            <h3>Whitelist Application</h3>
-            <p>Start your journey in the city. Apply for whitelist access.</p>
-            <a href="https://forms.gle/YOURFORM" target="_blank">Apply Now →</a>
-          </div>
-        </article>
+  <article class="app-card">
+    <div class="big-icon logo-icon-box">
+      <img src="images/11.png" alt="Whitelist Application Logo">
+    </div>
+
+    <div>
+      <h3>Whitelist Application</h3>
+      <p>Start your journey in the city. Apply for whitelist access.</p>
+      <a href="https://forms.gle/n8mu9qESo5UYYbYN7" target="_blank">Apply Now →</a>
+    </div>
+  </article>
 
         <article class="app-card">
-          <div class="big-icon">👮</div>
-          <div>
+          <div class="big-icon logo-icon-box">
+        <img src="images/pd_logo.png" alt="Police Logo">
+         </div>
+         <div>
             <h3>Police Application</h3>
             <p>Serve and protect the city. Join our Police Department.</p>
-            <a href="https://forms.gle/YOURFORM" target="_blank">Apply Now →</a>
+            <a href="https://forms.gle/mDFvtJZQkVgbexEA8" target="_blank">Apply Now →</a>
           </div>
         </article>
 
         <article class="app-card">
-          <div class="big-icon">🚑</div>
-          <div>
-            <h3>Medical / EMS Department Application</h3>
-            <p>Save lives and help others. Join our <Medical> EMS Department.</p>
-            <a href="https://forms.gle/YOURFORM" target="_blank">Apply Now →</a>
+           <div class="big-icon logo-icon-box">
+           <img src="images/md_logo.png" alt="Medical EMS Logo">
           </div>
-        </article>
+
+          <div>
+         <h3>Medical / EMS Application</h3>
+         <p>Save lives and help others. Join our Medical / EMS Department.</p>
+         <a href="https://forms.gle/mDFvtJZQkVgbexEA8" target="_blank">Apply Now →</a>
+         </div>
+</article>
       </div>
     </section>
 
-    
-<!-- HOW TO JOIN -->
+   <!-- RP PICTURES -->
+<section class="section" id="departments">
+  <div class="section-title">
+    <span></span>
+    <h2>RP Moments</h2>
+    <span></span>
+  </div>
+
+  <div class="rp-gallery">
+    <article class="rp-photo-card">
+      <img src="images/1.png" alt="ASTERRISK RP Moment 1">
+    </article>
+
+    <article class="rp-photo-card">
+      <img src="images/13.png" alt="ASTERRISK RP Moment 2">
+    </article>
+
+    <article class="rp-photo-card">
+      <img src="images/4.png" alt="ASTERRISK RP Moment 3">
+    </article>
+  </div>
+</section>
+
+
+    <!-- HOW TO JOIN -->
     <section class="section" id="discord">
       <div class="section-title">
         <span></span>
@@ -179,38 +226,36 @@
     <section class="section rules-faq" id="rules">
       <div class="rules-card">
         <h2>Server Rules</h2>
+
         <details open>
-          <summary>1. Be Respectful</summary>
-          <p>Respect all players and staff members.</p>
+          <summary>Where can I read the rules?</summary>
+          <p>Go to the Asterisk Rules section and click RP Rules or Robbery Rules. Then choose English or Sinhala.</p>
         </details>
+
         <details>
-          <summary>2. No Powergaming</summary>
-          <p>Do not force unrealistic actions onto other players.</p>
-        </details>
-        <details>
-          <summary>3. No Fail RP</summary>
-          <p>Stay in character and follow realistic roleplay behavior.</p>
-        </details>
-        <details>
-          <summary>4. Keep It Realistic</summary>
-          <p>Use common sense and keep scenarios believable.</p>
+          <summary>Do I need to read rules before whitelist?</summary>
+          <p>Yes. You must read and understand the server rules before submitting your whitelist application.</p>
         </details>
       </div>
 
       <div class="rules-card" id="faq">
         <h2>Frequently Asked Questions</h2>
+
         <details open>
           <summary>How do I apply for whitelist?</summary>
           <p>Click the whitelist application button and complete the form.</p>
         </details>
+
         <details>
           <summary>How long does approval take?</summary>
           <p>Usually staff review applications as soon as possible.</p>
         </details>
+
         <details>
           <summary>What are the requirements?</summary>
           <p>You need Discord, FiveM, and the ability to follow server rules.</p>
         </details>
+
         <details>
           <summary>Can I have more than one character?</summary>
           <p>Yes, if the server rules allow it.</p>
@@ -218,6 +263,38 @@
       </div>
     </section>
   </main>
+
+  <!-- RULE LANGUAGE POPUP -->
+  <div class="rule-popup" id="ruleLanguagePopup">
+    <div class="rule-popup-box small-rule-popup">
+      <button class="rule-popup-close" onclick="closeRulePopup()">×</button>
+
+      <h2 id="ruleChoiceTitle">Choose Rule Book Language</h2>
+
+      <div class="rule-language-buttons">
+        <button class="rule-language-btn" onclick="openRuleBookFromChoice('english')">
+          🇬🇧 English
+        </button>
+
+        <button class="rule-language-btn" onclick="openRuleBookFromChoice('sinhala')">
+          🇱🇰 Sinhala
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RULE BOOK POPUP -->
+  <div class="rule-popup" id="ruleBookPopup">
+    <div class="rule-popup-box">
+      <button class="rule-popup-close" onclick="closeRulePopup()">×</button>
+
+      <h2 id="ruleBookTitle">Rule Book</h2>
+
+      <div class="rule-popup-content" id="ruleBookContent">
+        Rule book will be added here.
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer" id="contact">
@@ -229,7 +306,10 @@
           <small>Sri Lanka's Premier FiveM Roleplay Server</small>
         </span>
       </a>
-      <a class="btn btn-primary" href="https://discord.gg/kHRrNccAxA" target="_blank">💬 Join Our Discord</a>
+
+      <a class="btn btn-primary" href="https://discord.gg/kHRrNccAxA" target="_blank">
+        💬 Join Our Discord
+      </a>
     </div>
 
     <div>
@@ -238,7 +318,7 @@
       <a href="#about">About</a>
       <a href="#applications">Whitelist</a>
       <a href="#departments">Departments</a>
-      <a href="#team">Team</a>
+      <a href="team.html">Team</a>
       <a href="#rules">Rules</a>
     </div>
 
@@ -256,7 +336,6 @@
       <a href="https://discord.gg/kHRrNccAxA" target="_blank">Discord</a>
       <a href="#">YouTube</a>
       <a href="#">Tiktok</a>
-      
     </div>
 
     <div class="stay-card">
@@ -268,5 +347,72 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    let selectedRuleType = "";
+
+    function openRuleLanguagePopup(ruleType) {
+      selectedRuleType = ruleType;
+
+      const title = document.getElementById("ruleChoiceTitle");
+
+      if (ruleType === "rp") {
+        title.textContent = "RP Rules - Choose Language";
+      }
+
+      if (ruleType === "robbery") {
+        title.textContent = "Robbery Rules - Choose Language";
+      }
+
+      document.getElementById("ruleLanguagePopup").classList.add("show");
+      document.body.style.overflow = "hidden";
+    }
+
+    function openRuleBookFromChoice(language) {
+      const languagePopup = document.getElementById("ruleLanguagePopup");
+      const bookPopup = document.getElementById("ruleBookPopup");
+      const title = document.getElementById("ruleBookTitle");
+      const content = document.getElementById("ruleBookContent");
+
+      languagePopup.classList.remove("show");
+
+      if (language === "english") {
+        title.textContent = "English Rule Book";
+        content.innerHTML = `
+          <iframe class="rule-pdf-viewer" src="files/english.pdf"></iframe>
+        `;
+      }
+
+      if (language === "sinhala") {
+        title.textContent = "Sinhala Rule Book";
+        content.innerHTML = `
+          <iframe class="rule-pdf-viewer" src="files/sinhala.pdf"></iframe>
+        `;
+      }
+
+      bookPopup.classList.add("show");
+    }
+
+    function closeRulePopup() {
+      document.getElementById("ruleLanguagePopup").classList.remove("show");
+      document.getElementById("ruleBookPopup").classList.remove("show");
+      document.body.style.overflow = "";
+    }
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeRulePopup();
+      }
+    });
+
+    document.addEventListener("click", function(event) {
+      const languagePopup = document.getElementById("ruleLanguagePopup");
+      const bookPopup = document.getElementById("ruleBookPopup");
+
+      if (event.target === languagePopup || event.target === bookPopup) {
+        closeRulePopup();
+      }
+    });
+  </script>
 </body>
 </html>
